@@ -5,8 +5,98 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeManage"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tableau de bord" Height="800" Width="1280" ResizeMode="NoResize">
     <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="784" LastChildFill="False" VerticalAlignment="Center" Width="78" Background="#FF00B2FF"/>
+        <Rectangle HorizontalAlignment="Left" Height="513" Margin="155,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="520"/>
+        <Rectangle HorizontalAlignment="Left" Height="62" Margin="155,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="184"/>
+        <Rectangle HorizontalAlignment="Left" Height="62" Margin="398,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="184"/>
+        <Rectangle HorizontalAlignment="Left" Height="513" Margin="709,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="520"/>
+        <Rectangle HorizontalAlignment="Left" Height="31" Margin="1047,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="164"/>
+        <Viewbox Height="Auto" Margin="16,71,1190,668" Stretch="Fill" Width="Auto">
+            <Grid Height="45" Width="73.5">
+
+                <Button Width="45"
+                    Height="45" Margin="0,0,28,0">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <Ellipse 
+                                    StrokeThickness="2" Fill="White"/>
+                                <ContentPresenter HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Height="37" Width="44" Source="/tableauDeBord.png"/>
+                </Button>
+                <Rectangle HorizontalAlignment="Left" Height="12" Margin="42,0,0,0" Stroke="White" VerticalAlignment="Center" Width="32" Fill="White" Panel.ZIndex="5"/>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox Height="Auto" Margin="16,147,1190,592" Stretch="Fill" Width="Auto">
+            <Grid Height="45" Width="73.5">
+
+                <Button Width="45"
+                    Height="45" Margin="0,0,28,0">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <Ellipse 
+                                    StrokeThickness="2" Fill="#FF50CAFF"/>
+                                <ContentPresenter HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Height="40" Width="50" Margin="0,0,3,5" Source="/collaborateur.png"/>
+                </Button>
+                <Rectangle HorizontalAlignment="Left" Height="12" Margin="42,0,0,0" Stroke="White" VerticalAlignment="Center" Width="32" Fill="White" Panel.ZIndex="5" Visibility="Hidden"/>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox Height="Auto" Margin="16,225,1190,514" Stretch="Fill" Width="Auto">
+            <Grid Height="45" Width="73.5">
+
+                <Button Width="45"
+                    Height="45" Margin="0,0,28,0">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <Ellipse 
+                                    StrokeThickness="2" Fill="#FF50CAFF"/>
+                                <ContentPresenter HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Height="40" Width="50" Source="/activite.png"/>
+                </Button>
+                <Rectangle HorizontalAlignment="Left" Height="12" Margin="42,0,0,0" Stroke="White" VerticalAlignment="Center" Width="32" Fill="White" Panel.ZIndex="5" Visibility="Hidden"/>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox Height="Auto" Margin="16,542,1190,197" Stretch="Fill" Width="Auto">
+            <Grid Height="45" Width="73.5">
+
+                <Button Width="45"
+                    Height="45" Margin="0,0,28,0">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <Ellipse 
+                                    StrokeThickness="2" Fill="#FF50CAFF"/>
+                                <ContentPresenter HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Height="40" Width="50" Source="/parametre.png"/>
+                </Button>
+                <Rectangle HorizontalAlignment="Left" Height="12" Margin="42,0,0,0" Stroke="White" VerticalAlignment="Center" Width="32" Fill="White" Panel.ZIndex="5" Visibility="Hidden"/>
+
+            </Grid>
+        </Viewbox>
 
     </Grid>
 </Window>

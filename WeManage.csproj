@@ -7,4 +7,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="activite.png" />
+    <None Remove="collaborateur.png" />
+    <None Remove="parametre.png" />
+    <None Remove="tableauDeBord.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="activite.png" />
+    <Resource Include="collaborateur.png" />
+    <Resource Include="parametre.png" />
+    <Resource Include="tableauDeBord.png" />
+  </ItemGroup>
+
 </Project>
